@@ -1,5 +1,5 @@
-# Jasterの特訓をするためのデータセットを生成するレポジトリです。
-## エキスパートモデルの一つとして､「ガリ勉たぬき」を作ります｡
+# 文法理解のためのデータセットを生成するレポジトリです。
+
 
 ## setup
 ~~~
@@ -65,8 +65,13 @@ bash download.sh
 
 - chabsa: 意味不明なので､評価指標から外れるかも
 
-## 使ってはいけないデータセット
-- LLM-jp-eval (= Jaster/JGLUE: trainも不可)
+## 使っていないデータセット
+- LLM-jp-eval 
 - JMT-Bench
 - MMLU
 - MT-Bench
+
+# upload
+~~~
+huggingface-cli upload --repo-type=dataset BumpoRikai ./jsonl
+~~~

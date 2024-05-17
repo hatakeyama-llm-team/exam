@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # 文法理解のためのデータセットを生成するレポジトリです。
 
 
+=======
+# Jasterの特訓をするためのデータセットを生成するレポジトリです。
+## エキスパートモデルの一つとして､「ガリ勉たぬき」を作ります｡
+
+>>>>>>> 6c3b3ad (readme)
 ## setup
 ~~~
 bash download.sh
@@ -41,7 +47,11 @@ bash download.sh
         - Q: ギタリストは、ギター演奏者の通称。ギタープレイヤーとも称される。
         - A: ギタリストは、 -> 通称。\nギター演奏者の -> 通称。\nギタープレイヤーとも -> 称される。
     - こまりごと:
+<<<<<<< HEAD
         - GINZAとかで機械的に正解を作れそうだが､あまり詳しくない
+=======
+        - GINZAとかで機械的に正解を作れそう
+>>>>>>> 6c3b3ad (readme)
 - wiki_coreference: フレーズ抽出
     - 例
         - Q: ギタリストは、ギター演奏者の通称。ギタープレイヤーとも称される。
@@ -63,6 +73,7 @@ bash download.sh
         - データを作るのが大変
         - LLM-jp-13b系ではほぼ零点だったので､捨て問でもよいかも
 
+<<<<<<< HEAD
 - chabsa: 意味不明なので､評価指標から外れるかも
 
 ## 使っていないデータセット
@@ -75,3 +86,12 @@ bash download.sh
 ~~~
 huggingface-cli upload --repo-type=dataset BumpoRikai ./jsonl
 ~~~
+=======
+- chabsa: 意味不明
+
+## 使ってはいけないデータセット
+- LLM-jp-eval (= Jaster/JGLUE: trainも不可)
+- JMT-Bench
+- MMLU
+- MT-Bench
+>>>>>>> 6c3b3ad (readme)
